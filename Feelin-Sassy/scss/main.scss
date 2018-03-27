@@ -1,0 +1,17 @@
+$seag : seagreen;
+$blue : lightblue;
+
+h2 {
+  color: $seag;
+}
+
+p {
+  color: red;
+}
+
+div {
+
+  p {
+    color: lightblue;
+  }
+}
