@@ -1,0 +1,25 @@
+$lav: #7289da;
+$white: #ffffff;
+$greyish: #99aab5;
+$charcoal: #2c2f33;
+$blackish: #23272a;
+$num: 0;
+
+
+
+nav {
+  background-color: $blackish;
+  ul {
+    list-style-type: none;
+    li {
+      display: inline;
+      color: $white;
+      font-size: 2em;
+          
+    }
+    .link {
+      color: $white * 0.7;
+      font-size: 1.5em;
+    }
+  }
+}

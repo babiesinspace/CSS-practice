@@ -1,0 +1,62 @@
+@import 'nav';
+
+$lav: #7289da;
+$white: #ffffff;
+$greyish: #99aab5;
+$charcoal: #2c2f33;
+$blackish: #23272a;
+$num: 0;
+
+
+@mixin box($height, $width, $bckcolor) {
+  height: $height;
+  width: $width;
+  background-color: $bckcolor;
+  border: 1px solid black;
+}
+
+
+#main-container{
+   width:100%;
+   background-color: $white;
+
+
+    .dev-section{
+      width:70%;
+      margin:auto;
+      height:200px;
+    }
+    #top-section{
+      background-color: $charcoal;
+      .box-red {
+        @include box(100px, 100px, red);
+      }
+      .box-yellow {
+        @include box(100px, 100px, yellow);
+      }
+    }
+    #middle-section{
+      background-color: $greyish;
+    }
+    #lower-section{
+      background-color: $lav;
+    }
+   
+}
+
+#main-footer{
+  width:100%;
+  height:100px;
+  background-color: $blackish;
+}
+
+.extend-class{
+  border: 5px solid black;
+}
+
+
+p{
+  @if $num == 2 {  
+    font-size: 2em;  
+  }
+}
